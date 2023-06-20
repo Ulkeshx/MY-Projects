@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html class="resposive" lang="en">
+
+<head>
+  <title>Gamecon</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Josefin+Sans&family=Kanit:wght@300&family=Solitreo&family=Titillium+Web:wght@300&family=Ubuntu&display=swap"
+    rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo+2&family=Indie+Flower&family=Josefin+Sans&family=Kanit:wght@300&family=Solitreo&family=Titillium+Web:wght@300&family=Ubuntu&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Genos&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Genos&family=Kanit&family=Ubuntu:wght@500&family=Raleway:wght@500&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <style>
+    .bg-img {
+      background-image: linear-gradient(to bottom right, #1b2939, #184352, #203559, rgb(26, 41, 58));
+      background-attachment: fixed;
+    }
+
+    #logo {
+      margin-top: 65px;
+    }
+
+    .navbar {
+      background-color: #171a21;
+      height: 110px;
+    }
+
+    .navbar-brand {
+      margin-bottom: 50px;
+    }
+
+    #navbarScroll {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 18px;
+      margin-left: 200px;
+    }
+
+    .dropdown-menu:hover {
+      display: block;
+    }
+
+    #drp:hover .dropdown-menu {
+      display: block;
+    }
+
+    #drp:hover #btn {
+      display: block;
+    }
+
+    .d-flex {
+      margin-left: 450px;
+      margin-top: 8px;
+    }
+
+    .vid {
+      margin-top: 30px;
+      background-image: linear-gradient(to right, #21100a, #12131d, #0f131e, rgb(32, 16, 10));
+    }
+
+    .tab2 {
+      color: whitesmoke;
+      border-color: white;
+      align-content: center;
+      border-radius: 3px;
+      width: 800px;
+      background-image: linear-gradient(to right, #39638fe8, #2e649ae1, #1e3d80f1, rgba(26, 53, 122, 0.876));
+      padding: 4px;
+      font-family: 'Kanit', sans-serif;
+    }
+
+    .st {
+      color: whitesmoke;
+      text-decoration: none;
+    }
+
+    .btn1 {
+      color: white;
+      border-radius: 4px;
+      border-color: purple;
+      background-image: linear-gradient(to right, #3a6889, #030406);
+    }
+
+    .form05 {
+      color: whitesmoke;
+      display: flex;
+      padding: 2px;
+      border: 1px solid currentColor;
+      border-radius: 5px;
+    }
+
+    .srh[type="search"] {
+      border: none;
+      background: transparent;
+      margin: 0;
+      padding: 7px 8px;
+      font-size: 14px;
+      color: inherit;
+      border: 1px solid transparent;
+      border-radius: inherit;
+    }
+
+    .srh[type="search"]::placeholder {
+      color: #bbb;
+    }
+
+    .sbt[type="submit"] {
+      text-indent: -999px;
+      overflow: hidden;
+      width: 40px;
+      padding: 0;
+      margin: 0;
+      border: 1px solid transparent;
+      border-radius: inherit;
+      background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+      cursor: pointer;
+      opacity: 0.7;
+    }
+
+    .sbt[type="submit"]:hover {
+      opacity: 1;
+    }
+
+    .sbt[type="submit"]:focus,
+    .srh[type="search"]:focus {
+      box-shadow: 0 0 3px 0 #1183d6;
+      border-color: #1183d6;
+      outline: none;
+    }
+
+    .center{
+      text-align: center;
+      margin-left: 550px;
+    }
+
+    #lit {
+      margin-top: 20px;
+    }
+
+    .para1 {
+      font-family: 'Exo 2';
+      font-size: 18px;
+      color: whitesmoke;
+      margin-left: 550px;
+      margin-top: 50px;
+    }
+
+    .container{
+      margin-right: 380px;
+      width:59%;
+      
+      
+    }
+
+    .carousel-inner {
+      background-color: #07111a;
+      border-radius: 10px;
+      box-shadow: 8px 7px 8px #03070b;
+    }
+
+    .carousel-item {
+      transition: transform 0.50s ease-in-out;
+    }
+
+    .carousel-indicators{
+      margin-right: 670px;
+    }
+
+    .carousel-fade .active.carousel-item-start,
+    .carousel-fade .active.carousel-item-end {
+      transition: opacity 0s 0.50s;
+    }
+
+    #pre {
+      margin-left: -40px;
+      margin-top: 120px;
+      height: 100px;
+      width: 45px;
+    }
+
+    #nxt {
+      margin-right: -50px;
+      margin-top: 120px;
+      height: 100px;
+      width: 50px;
+    }
+
+    .mini-ss{
+      margin-left: 20px;
+      margin-bottom: 200px;
+      background-color: #07111a;
+    }
+
+    .mini-ss02{
+      margin-left: 15px;
+      margin-bottom: 200px;
+      background-color: #07111a;
+    }
+
+    .tab {
+      display: inline;
+    }
+
+    p {
+      color: whitesmoke;
+    }
+
+    .cell1 {
+      background-image: linear-gradient(to right bottom, #0e1923d5, #07111a);
+      font-size: 16px;
+      border-radius: 10px;
+      width: 260px;
+      padding: 15px;
+    }
+
+    .mini-para {
+      font-family: 'Genos', sans-serif;
+      color: #9a9a9a;
+      font-size: 18px;
+      margin-top: 8px;
+    } 
+
+    .vag{
+      letter-spacing: 1px;
+      font-family: 'Raleway', sans-serif;
+      margin-top: 70px;
+      border-radius: 35px;
+      padding: 15px;
+      background-color:#d80386e8;
+      color: whitesmoke;
+      border: none;
+      width:13%;
+    }
+
+    .para2{
+      margin-top: 20px;
+      font-size: 25px;
+    }
+
+    .sve{
+      font-size: 27px;
+      color: whitesmoke;
+      text-decoration: none;
+    }
+
+    .sve:hover{
+      text-decoration: underline;
+      color: whitesmoke;
+    }
+
+    .tt{
+      margin-top: 70px;
+    }
+
+  </style>
+</head>
+
+<body class="bg-img">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Gamecon.html" id="logo">
+        <img src="Logo/GAMECON_free-file.png" style="margin-left: 250px;">
+      </a>
+
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="Gamecon.html">Store</a>
+          </li>
+          &nbsp;
+          <li class="nav-item dropdown" id="drp">
+            <a class="nav-link text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false" id="btn">
+              Community
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="#">Market</a></li>
+              <li><a class="dropdown-item" href="#">Discussion</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Contact us</a></li>
+            </ul>
+          </li>
+          &nbsp;
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="About us.html">About</a>
+          </li>
+          &nbsp;
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="#">Support</a>
+          </li>
+        </ul>
+        <form class="d-flex text-light">
+          <a class="nav-link text-light" href="login.html">Login</a>
+          <a class="nav-link text-light" href="#">|</a>
+          <a class="nav-link text-light" href="signup.html">Signup</a>
+        </form>
+      </div>
+    </div>
+  </nav>
+  &nbsp;
+  &nbsp;
+  
+  <div class="center">
+    <table class="tab2">
+      <tr>
+        <td><a href="Gamecon.html" class="st">Your Store</a></td>
+        <td><a href="#" class="st">Categories</a></td>
+        <td><a href="#" class="st">Wishlist</a></td>
+        <td><a href="#" class="st">Your Account</a></td>
+        <td style="float: right;">
+          <form class="form05">
+            <input class="srh" type="search" placeholder="Search...">
+            <button class="sbt" type="submit">Search</button>
+          </form>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <div class="vid">
+    <center><video loop muted autoplay playsinline
+        poster="https://cdn.cloudflare.steamstatic.com/steam/clusters/frontpage/53d62cce754388a033e141be/page_bg_mobile_english.jpg?t=1677616037"
+        class="fullscreen-bg__video_mobile" style="width:900px" id="lit">
+        <source
+          src="https://cdn.cloudflare.steamstatic.com/steam/clusters/frontpage/53d62cce754388a033e141be/mp4_page_bg_mobile_english.mp4?t=1677616037"
+          type="video/mp4" style="width:900px">
+      </video></center>
+    <hr style="background-color: #07111a;">
+  </div>
+
+  <p class="para1">Featured and Recommended.</p>
+  &nbsp;
+  &nbsp;
+  <div class="container">
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel"
+      data-bs-interval="5000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="Metro exodus.html"><img src="posters/Metro exodus img 1.jpg" style="width:600px; height: 350px; border-radius: 10px;"></a>
+           
+          <img class="mini-ss"src="metro ss/broken towers.jpg" height="100px" width="220px"> 
+          <img class="mini-ss02" src="metro ss/mt junglw 2.jpg" height="100px" width="220px"> 
+           
+          
+        </div>
+        <div class="carousel-item">
+          <a href="Gta 5.html"><img src="posters/gta 5.jpg" style="width:600px; height: 350px; border-radius: 10px;"></a>
+        </div>
+        <div class="carousel-item">
+          <img src="images/nfs heat poster.jpg" style="width:600px; height: 350px; border-radius: 10px;">
+        </div>
+        <div class="carousel-item">
+          <img src="images/far-cry-5 poster.jpg" style="width:600px; height: 350px; border-radius: 10px;">
+        </div>
+        <div class="carousel-item">
+          <img src="images/WZ2-S01-DMZ-TACTICS-TOUT.jpg" style="width:600px; height: 350px; border-radius: 10px;">
+        </div>
+        <div class="carousel-item">
+          <img src="images/just-cause-3 poster.jpg"
+            style="width:600px; height: 350px; border-radius: 10px;">
+        </div>
+        <div class="carousel-item">
+          <img src="images/battlefield 5 poster.jpg" style="width:600px; height: 350px; border-radius: 10px;">
+        </div>
+        <div class="carousel-item">
+          <img src="pubg poster01.webp" style="width:600px; height: 350px; border-radius: 10px;">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev" id="pre">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next" id="nxt">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <br>
+  <br>
+  <hr style="height:2px;border-width:0;color:whitesmoke">
+  <br>
+  <br>
+  <hr style="height:2px;border-width:0;color:whitesmoke">
+  <h3>Updates and offers</h3>
+  <center>
+    <div>
+      <table class="tab">
+        <tr>
+          <td class="cell1" colspan="3">
+            <a href="DCS world.html"><img src="posters/DCS-World poster.jpg" height="300px" width="230px" style="border-radius: 10px;"></a>
+            <p class="mini-para">Base Game</p>
+            <p style="color:whitesmoke"><b>DCS world</b></p>
+            <mark style="background-color: #0074e4; color: whitesmoke;">-40%</mark>&nbsp; &nbsp;<del
+              style="color: #9a9a9a">&#8377;599</del> &nbsp;<p style="color: whitesmoke; display: inline-block;">
+              &#8377;239</p>
+          </td>
+        </tr>
+      </table>
+      &nbsp;
+      &nbsp;
+      &nbsp;
+      &nbsp;
+      <table class="tab">
+        <tr>
+          <td class="cell1">
+            <a href="login.html"><img src="posters/valorent poster.jpg" height="300px" width="230px" style="border-radius: 10px;"></a>
+            <p class="mini-para">Base Game</p>
+            <p style="color:whitesmoke"><b>Valorent</b></p>
+            <mark style="background-color: #0074e4; color: whitesmoke;">-100%</mark> &nbsp; &nbsp;<del
+              style="color: #9a9a9a">&#8377;500</del> &nbsp;<p style="color:whitesmoke; display: inline-block;">₹0</p>
+          </td>
+        </tr>
+      </table>
+      &nbsp;
+      &nbsp;
+      &nbsp;
+      &nbsp;
+      <table class="tab">
+        <tr>
+          <td class="cell1">
+            <a href="Metro exodus.html"> <img src="posters/mtero exodus poster.jpg" height="300px" width="230px" style="border-radius: 10px;"></a>
+            <p class="mini-para">Base Game</p>
+            <p style="color:whitesmoke"><b>Metro Exodus</b></p>
+            <mark style="background-color:#0074e4; color: whitesmoke;">-50%</mark> &nbsp; &nbsp;<del
+              style="color: #9a9a9a">&#8377;999</del> &nbsp;<p style="color: whitesmoke; display: inline-block;">₹499</p>
+          </td>
+        </tr>
+      </table>
+      &nbsp;
+      &nbsp;
+      &nbsp;
+      &nbsp;
+      <table class="tab">
+        <tr>
+          <td class="cell1">
+            <a href="login.html"><img src="posters/metro last light poster.png" height="300px" width="230px" style="border-radius: 10px;"></a>
+            <p class="mini-para">Base Game</p>
+            <p style="color:whitesmoke"><b>Metro: Last Light Redux</b></p>
+            <mark style="background-color:#0074e4; color: whitesmoke;">-50%</mark> &nbsp; &nbsp;<del
+              style="color: #9a9a9a">&#8377;499</del> &nbsp;<p style="color: whitesmoke; display: inline-block;">₹249</p>
+          </td>
+        </tr>
+      </table>
+      &nbsp;
+      &nbsp;
+      &nbsp;
+      &nbsp;
+      <table class="tab">
+        <tr>
+          <td class="cell1">
+            <a href="login.html"><img src="posters/metro 2033 poster.jpg" height="300px" width="230px" style="border-radius: 10px;"></a>
+            <p class="mini-para">Base Game</p>
+            <p style="color:whitesmoke"><b>Metro: 2033 Redux</b></p>
+            <mark style="background-color:#0074e4; color: whitesmoke;">-50%</mark> &nbsp; &nbsp;<del
+              style="color: #9a9a9a">&#8377;499</del> &nbsp;<p style="color: whitesmoke; display: inline-block;">₹249</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </center>
+  <center>
+     <a href="#"><button class="vag"><b>View all Games</b></button></a>
+  </center>
+  <center>
+    <div class="tt">
+      <table class="tab">
+        <tr>
+          <td class="cell1">
+            <a href="login.html"><img src="images/ubisoft sale img.avif" height="300px" width="550px" style="border-radius: 10px;"></a>
+            <p class="para2">Ubisoft Sale - Upto 85% off-</p>
+            <p style="color: #9a9a9a; font-size: 17px;">Save up to 85% on Ubisoft's greatest games this week only.<br> Sale ends March 15.</p>
+            <a href="#" class="sve">Save now</a>
+          </td>
+        </tr>
+      </table>
+      &nbsp;
+      &nbsp;
+      &nbsp;
+      <table class="tab">
+        <tr>
+          <td class="cell1">
+            <a href="login.html"> <img src="posters/destiny 2 poster.jpg" height="285px" width="550px" style="border-radius: 10px;"></a>
+            <p class="para2">Destiny 2: Season of Defiance</p>
+            <p style="color: #9a9a9a; font-size: 17px;">Destiny 2’s latest Season is here with all new story missions, activities, and rewards.</p>
+            <p class="sve">&#8377;1,200</p>
+          </td>
+        </tr>
+      </table>
+      &nbsp;
+      &nbsp;
+      &nbsp;
+      <table class="tab">
+        <tr>
+          <td class="cell1">
+            <a href="Gta 5.html"> <img src="posters/gta 5.jpg" height="260px" width="550px" style="border-radius: 10px;"></a>
+            <p class="para2">Grand Theft Auto V: Premium Edition</p>
+            <p style="color: #9a9a9a; font-size: 17px;">Grand Theft Auto Online and all existing gameplay upgrades and content. You’ll also get the Criminal Enterprise Starter Pack, the fastest way to jumpstart your criminal empire in GTA Online.</p>
+            <p class="sve">₹2,321</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </center>
+
+</body>
+
+</html>
